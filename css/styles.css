@@ -1,0 +1,93 @@
+
+.wrapper {
+    position: relative;
+}
+.img1 {
+    width: 100%;
+    height: 100%;
+}
+.img2 {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    width: 400px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.img3 {
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    width: 300px;
+    
+}
+.img4 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 200px;
+    animation-name: meteor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.img5 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 150px;
+    animation: astronaut 2s infinite linear alternate;
+}
+.img6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+@keyframes meteor {
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(100px);
+    }
+    50% {
+        transform: translateY(200px);
+    }
+    75% {
+        transform: translateY(300px);
+    }
+  }
+  @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes astronaut {
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(30px);
+    }
+    
+    50% {
+        transform: translateY(50px);
+    }
+    75% {
+        transform: translateY(70px);
+    }
+    100% {
+        transform: translate(90px);
+    }
+  }
+  
